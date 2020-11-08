@@ -157,9 +157,14 @@
 
 		cursor: pointer;
 
+		&:hover,
 		&:focus {
 			outline: none;
 			border: 1px solid #2196f3;
+		}
+
+		&:hover + svg {
+			fill: $primary-logo-color;
 		}
 	}
 
@@ -202,7 +207,7 @@
 			line-height: 1.166;
 			letter-spacing: 0.01em;
 		}
-
+		&:hover,
 		&:focus {
 			outline: none;
 			border: 1px solid #2196f3;
@@ -254,12 +259,12 @@
 		margin-right: 7px;
 
 		background-color: $primary-fon-color;
-		background-image: url(../Images/icons-svg/vector.svg);
+		background-image: url(../images/svg/vector.svg);
 		background-size: contain;
 
 		.modal-form-agreement:focus + & {
 			background-color: $primary-logo-color;
-			background-image: url(../Images/icons-svg/icon-check.svg);
+			background-image: url(../images/svg/icon-check.svg);
 			border-radius: 2px;
 		}
 	}
