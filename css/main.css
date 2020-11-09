@@ -361,7 +361,7 @@ img {
   background-size: contain;
 }
 
-.modal-form-agreement:focus + .modal-form-agreement-check::before {
+.modal-form-agreement:checked + .modal-form-agreement-check::before {
   background-color: #2196f3;
   background-image: url(../images/svg/icon-check.svg);
   border-radius: 2px;

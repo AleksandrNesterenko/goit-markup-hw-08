@@ -262,7 +262,7 @@
 		background-image: url(../images/svg/vector.svg);
 		background-size: contain;
 
-		.modal-form-agreement:focus + & {
+		.modal-form-agreement:checked + & {
 			background-color: $primary-logo-color;
 			background-image: url(../images/svg/icon-check.svg);
 			border-radius: 2px;
