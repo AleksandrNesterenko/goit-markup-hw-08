@@ -57,7 +57,7 @@ img {
   padding-right: 15px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (min-width: 320px) {
   .container {
     width: 100%;
   }
@@ -83,13 +83,11 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-  }
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
 }
 
 @media screen and (min-width: 768px) {
@@ -97,6 +95,7 @@ img {
     width: 768px;
     display: flex;
     align-items: center;
+    height: 80px;
   }
 }
 
@@ -106,18 +105,17 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .footer .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .footer .container {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     align-items: baseline;
     justify-content: center;
   }
@@ -849,6 +847,14 @@ img {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 .advantages__list-item::before {
   content: "";
   display: block;
@@ -863,6 +869,7 @@ img {
 .advantages__list-title {
   margin-top: 0px;
   margin-bottom: 10px;
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.142;
@@ -870,66 +877,74 @@ img {
   text-transform: uppercase;
 }
 
-.advantages__list-text {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  color: #757575;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
+@media screen and (min-width: 768px) {
+  .advantages__list-title {
+    text-align: start;
+  }
 }
 
-.icon-antena::before {
+@media screen and (min-width: 1200px) {
+  .advantages__list-title {
+    text-align: start;
+  }
+  .advantages__list-text {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #757575;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+  }
+}
+
+.advantages__list .icon-antena::before {
   background-image: url(../images/svg/antenna.svg);
 }
 
-.icon-clock::before {
+.advantages__list .icon-clock::before {
   background-image: url(../images/svg/clock.svg);
 }
 
-.icon-diagram::before {
+.advantages__list .icon-diagram::before {
   background-image: url(../images/svg/diagram.svg);
 }
 
-.icon-astronaut::before {
+.advantages__list .icon-astronaut::before {
   background-image: url(../images/svg/astronaut.svg);
 }
 
 @media screen and (min-width: 480px) {
-  .advantages__list {
+  .advantages__list .advantages__list {
     display: block;
   }
-  .advantages__list-item {
+  .advantages__list .advantages__list-item {
     width: 100%;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .advantages__list {
+@media screen and (min-width: 768px) {
+  .advantages__list .advantages__list {
     display: flex;
     flex-wrap: wrap;
   }
-  .advantages__list-item {
+  .advantages__list .advantages__list-item {
     width: 354px;
   }
-  .advantages__list-item:nth-child(odd) {
-    margin-right: 30px;
-  }
-  .advantages__list-item:not(:last-child) {
+  .advantages__list .advantages__list-item:not(:last-child) {
     margin-bottom: 0;
   }
-  .advantages__list-item:nth-last-child(n + 3) {
+  .advantages__list .advantages__list-item:nth-last-child(n + 3) {
     margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .advantages__list {
+  .advantages__list .advantages__list {
     display: flex;
     justify-content: space-between;
   }
-  .advantages__list-item {
+  .advantages__list .advantages__list-item {
     width: 270px;
   }
 }
@@ -1165,7 +1180,7 @@ img {
   margin-bottom: 60px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (min-width: 320px) {
   .address-box {
     width: 100%;
   }
@@ -1215,7 +1230,7 @@ img {
   padding-bottom: 6px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .social-links-box {
     margin-bottom: 60px;
   }
@@ -1289,9 +1304,9 @@ img {
   fill: #ffffff;
 }
 
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (min-width: 320px) {
   .subscription-box {
-    width: 100%;
+    margin: 0 auto;
   }
   .subscription-box__input {
     width: 100%;
