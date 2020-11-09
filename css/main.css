@@ -192,6 +192,12 @@ img {
   transform: translate(-50%, -50%) scale(1);
 }
 
+@media screen and (max-width: 480px) {
+  .modal {
+    width: 93.75%;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .modal {
     position: absolute;
@@ -359,10 +365,10 @@ img {
   background-color: #ffffff;
   background-image: url(../images/svg/vector.svg);
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .modal-form-agreement:checked + .modal-form-agreement-check::before {
-  background-color: #2196f3;
   background-image: url(../images/svg/icon-check.svg);
   border-radius: 2px;
 }
@@ -382,6 +388,21 @@ img {
 
 .modal-form-btn:hover {
   background-color: #188ce8;
+}
+
+@media screen and (max-width: 480px) {
+  .modal-form-field {
+    width: 100%;
+  }
+  .modal-form-input {
+    width: 100%;
+  }
+  .modal-form-message-field {
+    width: 100%;
+  }
+  .modal-form-message {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 1200px) {

@@ -71,6 +71,11 @@
 		transform: translate(-50%, -50%) scale(1);
 	}
 }
+@media screen and (max-width: 480px) {
+	.modal {
+		width: 93.75%;
+	}
+}
 
 @media screen and (min-width: 768px) {
 	.modal {
@@ -261,9 +266,9 @@
 		background-color: $primary-fon-color;
 		background-image: url(../images/svg/vector.svg);
 		background-size: contain;
+		background-repeat: no-repeat;
 
 		.modal-form-agreement:checked + & {
-			background-color: $primary-logo-color;
 			background-image: url(../images/svg/icon-check.svg);
 			border-radius: 2px;
 		}
@@ -285,6 +290,24 @@
 
 		&:hover {
 			background-color: #188ce8;
+		}
+	}
+}
+@media screen and (max-width: 480px) {
+	.modal-form {
+		&-field {
+			width: 100%;
+		}
+
+		&-input {
+			width: 100%;
+		}
+
+		&-message-field {
+			width: 100%;
+		}
+		&-message {
+			width: 100%;
 		}
 	}
 }
