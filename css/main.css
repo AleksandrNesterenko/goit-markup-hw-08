@@ -950,6 +950,7 @@ img {
 }
 
 .specialization {
+  display: none;
   padding-bottom: 94px;
 }
 
@@ -985,12 +986,6 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-}
-
-@media screen and (max-width: 1199px) {
-  .specialization {
-    display: none;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1047,7 +1042,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .team__list {
     display: flex;
     flex-wrap: wrap;
